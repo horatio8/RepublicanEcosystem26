@@ -1,4 +1,0 @@
-aws_region      = "us-east-1"
-airtable_api_key = "pat_xxxxxxxxxxxxx"
-airtable_base_id = "appXXXXXXXXXXXXXX"
-fec_api_key      = "your_fec_api_key"

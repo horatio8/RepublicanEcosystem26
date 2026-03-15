@@ -1,0 +1,15 @@
+[project]
+id = "republican-ecosystem"
+name = "Republican Ecosystem Mapper"
+
+[db]
+major_version = 15
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+
+[studio]
+enabled = true
+port = 54323
