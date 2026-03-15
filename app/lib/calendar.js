@@ -1,6 +1,7 @@
 /**
  * Calendar invite sender — creates ICS events and sends via Google Calendar API.
  */
+import { GoogleAuth } from 'google-auth-library'
 
 /**
  * Create an ICS calendar file as a string.
@@ -112,19 +113,14 @@ export async function sendGoogleCalendarInvite(eventData) {
 }
 
 /**
- * Create a JWT for Google service account auth.
- * In production, use the google-auth-library package.
- * This is a simplified version for Vercel serverless.
+ * Create an access token for Google service account auth.
  */
 async function createGoogleJWT(credentials) {
-  // For production, install and use:
-  // import { GoogleAuth } from 'google-auth-library'
-  // const auth = new GoogleAuth({ credentials, scopes: ['https://www.googleapis.com/auth/calendar'] })
-  // const client = await auth.getClient()
-  // const token = await client.getAccessToken()
-  // return token.token
-
-  // Placeholder — requires google-auth-library in production
-  console.warn('Google JWT creation requires google-auth-library — install it for production use')
-  return ''
+  const auth = new GoogleAuth({
+    credentials,
+    scopes: ['https://www.googleapis.com/auth/calendar'],
+  })
+  const client = await auth.getClient()
+  const token = await client.getAccessToken()
+  return token.token
 }
