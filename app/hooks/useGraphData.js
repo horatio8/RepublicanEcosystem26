@@ -1,6 +1,9 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
+import { createBrowserClient } from '../lib/supabase'
+
+const supabase = createBrowserClient()
 
 export function useGraphData(filters = {}) {
   const [graph, setGraph] = useState({ nodes: [], edges: [] })
@@ -11,15 +14,47 @@ export function useGraphData(filters = {}) {
 
   const fetchGraph = useCallback(async () => {
     try {
-      const params = new URLSearchParams()
-      if (filters.category) params.set('category', filters.category)
-      if (filters.state) params.set('state', filters.state)
-      if (filters.minProminence) params.set('min_prominence', filters.minProminence)
+      let nodeQuery = supabase.from('ecosystem_graph').select('*')
+      if (filters.category) nodeQuery = nodeQuery.eq('category', filters.category)
+      if (filters.state) nodeQuery = nodeQuery.eq('state', filters.state)
+      if (filters.minProminence) nodeQuery = nodeQuery.gte('prominence_score', filters.minProminence)
 
-      const response = await fetch(`/api/graph?${params}`)
-      if (!response.ok) throw new Error('Failed to fetch graph data')
-      const data = await response.json()
-      setGraph(data)
+      const [nodesResult, edgesResult] = await Promise.all([
+        nodeQuery,
+        supabase.from('relationships').select('*'),
+      ])
+
+      if (nodesResult.error) throw nodesResult.error
+      if (edgesResult.error) throw edgesResult.error
+
+      const nodes = (nodesResult.data || []).map((n) => ({
+        id: n.id,
+        name: n.name,
+        type: n.entity_type,
+        category: n.category,
+        revenue: Number(n.revenue) || 0,
+        prominence: Number(n.prominence_score) || 0,
+        trend: n.trend || 'Stable',
+        state: n.state || '',
+        description: n.description || '',
+        website: n.website || '',
+        verified: n.verified,
+      }))
+
+      const nodeNames = new Set(nodes.map((n) => n.name))
+      const edges = (edgesResult.data || [])
+        .filter((r) => nodeNames.has(r.entity_a_name) && nodeNames.has(r.entity_b_name))
+        .map((r) => ({
+          id: r.id,
+          source: r.entity_a_name,
+          target: r.entity_b_name,
+          type: r.relationship_type || '',
+          active: r.active,
+          amount: Number(r.financial_amount) || 0,
+          description: r.description || '',
+        }))
+
+      setGraph({ nodes, edges })
     } catch (err) {
       setError(err.message)
     }
@@ -27,10 +62,29 @@ export function useGraphData(filters = {}) {
 
   const fetchStats = useCallback(async () => {
     try {
-      const response = await fetch('/api/stats')
-      if (!response.ok) throw new Error('Failed to fetch stats')
-      const data = await response.json()
-      setStats(data)
+      const [orgs, people, rels, evts] = await Promise.all([
+        supabase.from('organizations').select('category, annual_revenue'),
+        supabase.from('people').select('id', { count: 'exact', head: true }),
+        supabase.from('relationships').select('id', { count: 'exact', head: true }),
+        supabase.from('events').select('id', { count: 'exact', head: true }),
+      ])
+
+      const categories = {}
+      let totalRevenue = 0
+      ;(orgs.data || []).forEach((o) => {
+        const cat = o.category || 'Unknown'
+        categories[cat] = (categories[cat] || 0) + 1
+        totalRevenue += Number(o.annual_revenue) || 0
+      })
+
+      setStats({
+        total_organizations: orgs.data?.length || 0,
+        total_people: people.count || 0,
+        total_relationships: rels.count || 0,
+        total_events: evts.count || 0,
+        total_revenue: totalRevenue,
+        categories,
+      })
     } catch (err) {
       console.error('Stats fetch failed:', err)
     }
@@ -38,10 +92,14 @@ export function useGraphData(filters = {}) {
 
   const fetchEvents = useCallback(async () => {
     try {
-      const response = await fetch('/api/events?upcoming=true')
-      if (!response.ok) throw new Error('Failed to fetch events')
-      const data = await response.json()
-      setEvents(data.events || [])
+      const { data, error: fetchError } = await supabase
+        .from('events')
+        .select('*')
+        .gte('start_date', new Date().toISOString())
+        .order('start_date', { ascending: true })
+
+      if (fetchError) throw fetchError
+      setEvents(data || [])
     } catch (err) {
       console.error('Events fetch failed:', err)
     }
