@@ -1,3 +1,6 @@
+-- Add unique constraint on organization name to support upsert operations
+ALTER TABLE organizations ADD CONSTRAINT organizations_name_unique UNIQUE (name);
+
 -- Expanded seed data: 150+ conservative/Republican organizations
 -- Categories use the org_category enum defined in 001_create_tables.sql:
 --   'PAC', 'Super PAC', '501(c)(3) Nonprofit', '501(c)(4) Nonprofit',
@@ -249,6 +252,6 @@ INSERT INTO organizations (name, category, description, website, state, city, an
 ('Pacific Justice Institute', '501(c)(3) Nonprofit', 'Conservative legal defense organization specializing in religious freedom, parental rights, and traditional values.', 'https://www.pacificjustice.org', 'CA', 'Sacramento', 3000000, '91-2054033', true),
 ('American Values', '501(c)(4) Nonprofit', 'Conservative advocacy organization founded by Gary Bauer promoting traditional family values and religious liberty.', 'https://ouramericanvalues.org', 'DC', 'Washington', 2000000, '54-1949706', true),
 ('Council for Citizens Against Government Waste', '501(c)(3) Nonprofit', 'Conservative organization opposing government waste and advocating for fiscal responsibility.', 'https://www.cagw.org', 'DC', 'Washington', 4000000, '52-1355828', true),
-('Judicial Watch', '501(c)(3) Nonprofit', 'Conservative legal watchdog that uses FOIA requests and litigation to investigate government misconduct.', 'https://www.judicialwatch.org', 'DC', 'Washington', 50000000, '52-1462137', true)
+-- Note: Judicial Watch already seeded in 002_seed_data.sql
 
 ON CONFLICT DO NOTHING;
