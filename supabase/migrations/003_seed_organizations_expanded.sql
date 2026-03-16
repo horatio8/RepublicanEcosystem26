@@ -82,7 +82,7 @@ INSERT INTO organizations (name, category, description, website, state, city, an
 ('Eagle Forum', '501(c)(4) Nonprofit', 'Conservative organization founded by Phyllis Schlafly focused on traditional values, national sovereignty, and opposing feminism.', 'https://eagleforum.org', 'MO', 'Alton', 2000000, '43-0960965', true),
 ('Convention of States Action', '501(c)(4) Nonprofit', 'Advocacy organization pushing for an Article V constitutional convention to limit federal power.', 'https://conventionofstates.com', 'TX', 'Houston', 10000000, '47-2598625', true),
 ('American Principles Project', '501(c)(4) Nonprofit', 'Conservative advocacy group opposing transgender rights policies and promoting traditional family values.', 'https://americanprinciplesproject.org', 'DC', 'Washington', 4000000, '45-4501417', true),
-('Heritage Action for America', '501(c)(4) Nonprofit', 'Advocacy arm of the Heritage Foundation that lobbies Congress and scores legislative votes.', 'https://heritageaction.com', 'DC', 'Washington', 18000000, '27-4544007', true),
+-- Note: Heritage Action for America already seeded in 002_seed_data.sql
 ('American Legislative Exchange Council', '501(c)(3) Nonprofit', 'Organization connecting state legislators with corporations to draft model legislation promoting free markets and limited government.', 'https://alec.org', 'VA', 'Arlington', 11000000, '52-0140979', true),
 ('State Policy Network', '501(c)(3) Nonprofit', 'Umbrella network of 64 state-level conservative think tanks promoting free-market policies across all 50 states.', 'https://spn.org', 'VA', 'Arlington', 17000000, '86-0597494', true),
 
@@ -209,16 +209,9 @@ INSERT INTO organizations (name, category, description, website, state, city, an
 -- PACS AND SUPER PACS
 -- ══════════════════════════════════════════════════════════════════
 
-('MAGA Inc.', 'Super PAC', 'Pro-Trump Super PAC that was the primary outside spending vehicle supporting Trump''s 2024 campaign.', NULL, 'DC', 'Washington', 150000000, NULL, true),
-('Preserve America PAC', 'Super PAC', 'Pro-Trump Super PAC funded by major Republican megadonors like Miriam Adelson.', NULL, 'DC', 'Washington', 100000000, NULL, true),
-('Winning for Women', 'PAC', 'Republican PAC dedicated to electing conservative women to Congress.', 'https://winningforwomen.com', 'DC', 'Washington', 5000000, NULL, true),
-('American Crossroads', 'Super PAC', 'Republican Super PAC co-founded by Karl Rove to support GOP candidates and causes.', NULL, 'DC', 'Washington', 50000000, NULL, true),
+-- Note: MAGA Inc. (= Make America Great Again Inc.), Preserve America PAC, Winning for Women PAC,
+-- American Crossroads, NRSC, NRCC, RGA, RAGA, RSLC already seeded in 002_seed_data.sql
 ('Crossroads GPS', '501(c)(4) Nonprofit', 'Dark money arm of Karl Rove''s Crossroads network used for issue advocacy without donor disclosure.', NULL, 'DC', 'Washington', 30000000, NULL, true),
-('National Republican Senatorial Committee', 'Campaign Committee', 'Official campaign arm of the Republican Party dedicated to electing Republican senators.', 'https://www.nrsc.org', 'DC', 'Washington', 180000000, NULL, true),
-('National Republican Congressional Committee', 'Campaign Committee', 'Official campaign arm of the Republican Party dedicated to electing Republican House members.', 'https://www.nrcc.org', 'DC', 'Washington', 200000000, NULL, true),
-('Republican Governors Association', '527 Organization', 'Political organization supporting Republican gubernatorial candidates across the country.', 'https://www.rga.org', 'DC', 'Washington', 150000000, NULL, true),
-('Republican Attorneys General Association', '527 Organization', 'Political organization supporting Republican candidates for state attorney general.', 'https://www.republicanags.com', 'DC', 'Washington', 30000000, NULL, true),
-('Republican State Leadership Committee', '527 Organization', 'Organization dedicated to electing Republicans to state-level offices and legislatures.', 'https://rslc.gop', 'DC', 'Washington', 60000000, NULL, true),
 
 -- ══════════════════════════════════════════════════════════════════
 -- GRASSROOTS / ACTIVIST ORGANIZATIONS
