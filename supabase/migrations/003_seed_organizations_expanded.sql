@@ -248,3 +248,77 @@ INSERT INTO organizations (name, category, description, website, state, city, an
 -- Note: Judicial Watch already seeded in 002_seed_data.sql
 
 ON CONFLICT DO NOTHING;
+
+-- ══════════════════════════════════════════════════════════════════
+-- RELATIONSHIPS for newly added organizations
+-- ══════════════════════════════════════════════════════════════════
+
+INSERT INTO relationships (entity_a_name, entity_a_type, entity_b_name, entity_b_type, relationship_type, description, active) VALUES
+  -- Trump-aligned network
+  ('Conservative Partnership Institute', 'organization', 'America First Legal Foundation', 'organization', 'Founding', 'CPI provided seed funding and incubation for America First Legal', true),
+  ('Conservative Partnership Institute', 'organization', 'Center for Renewing America', 'organization', 'Subsidiary / Parent', 'CRA is described as under CPI in federal tax documents', true),
+  ('America First Legal Foundation', 'organization', 'Federalist Society', 'organization', 'Coalition Partner', 'Share conservative legal strategies and judicial priorities', true),
+
+  -- Koch network expanded
+  ('Charles Koch Foundation', 'organization', 'Americans for Prosperity', 'organization', 'Donation / Financial', 'Koch Foundation is primary funder of AFP network', true),
+  ('Charles Koch Foundation', 'organization', 'Mercatus Center', 'organization', 'Donation / Financial', 'Koch Foundation is major funder of Mercatus at George Mason University', true),
+  ('Charles Koch Foundation', 'organization', 'Reason Foundation', 'organization', 'Donation / Financial', 'Koch Foundation provides significant funding', true),
+  ('Charles Koch Foundation', 'organization', 'Institute for Justice', 'organization', 'Donation / Financial', 'Koch Foundation is a major supporter of IJ', true),
+
+  -- DonorsTrust / dark money flows
+  ('DonorsTrust', 'organization', 'America First Legal Foundation', 'organization', 'Donation / Financial', 'DonorsTrust gave nearly $21.3M to AFL in 2024', true),
+  ('DonorsTrust', 'organization', 'Federalist Society', 'organization', 'Donation / Financial', 'DonorsTrust is major anonymous funder of Federalist Society', true),
+  ('DonorsTrust', 'organization', 'Heartland Institute', 'organization', 'Donation / Financial', 'DonorsTrust is significant funder of Heartland Institute', true),
+  ('DonorsTrust', 'organization', 'State Policy Network', 'organization', 'Donation / Financial', 'DonorsTrust funds SPN and its state affiliates', true),
+  ('Donors Capital Fund', 'organization', 'DonorsTrust', 'organization', 'Subsidiary / Parent', 'DCF is sister organization to DonorsTrust for large donations', true),
+  ('Marble Freedom Trust', 'organization', 'DonorsTrust', 'organization', 'Donation / Financial', 'Marble Freedom Trust gave $41M to DonorsTrust in 2021', true),
+  ('Marble Freedom Trust', 'organization', 'Judicial Crisis Network', 'organization', 'Donation / Financial', 'Leonard Leo controls both organizations', true),
+  ('Marble Freedom Trust', 'organization', 'Honest Elections Project', 'organization', 'Donation / Financial', 'Leonard Leo controls both organizations', true),
+
+  -- Bradley Foundation network
+  ('Lynde and Harry Bradley Foundation', 'organization', 'Heritage Foundation', 'organization', 'Donation / Financial', 'Bradley Foundation is one of Heritage''s largest funders', true),
+  ('Lynde and Harry Bradley Foundation', 'organization', 'American Enterprise Institute', 'organization', 'Donation / Financial', 'Bradley Foundation is major AEI funder', true),
+  ('Lynde and Harry Bradley Foundation', 'organization', 'Federalist Society', 'organization', 'Donation / Financial', 'Bradley Foundation is significant funder of Fed Soc', true),
+  ('Lynde and Harry Bradley Foundation', 'organization', 'American Legislative Exchange Council', 'organization', 'Donation / Financial', 'Bradley Foundation is one of ALEC''s biggest foundation donors', true),
+  ('Lynde and Harry Bradley Foundation', 'organization', 'Bradley Impact Fund', 'organization', 'Subsidiary / Parent', 'Bradley Impact Fund is managed by the Bradley Foundation', true),
+
+  -- State Policy Network
+  ('State Policy Network', 'organization', 'Texas Public Policy Foundation', 'organization', 'Coalition Partner', 'TPPF is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'Goldwater Institute', 'organization', 'Coalition Partner', 'Goldwater Institute is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'Mackinac Center for Public Policy', 'organization', 'Coalition Partner', 'Mackinac Center is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'Illinois Policy Institute', 'organization', 'Coalition Partner', 'IPI is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'John Locke Foundation', 'organization', 'Coalition Partner', 'JLF is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'Foundation for Government Accountability', 'organization', 'Coalition Partner', 'FGA is an SPN affiliate member', true),
+  ('State Policy Network', 'organization', 'American Legislative Exchange Council', 'organization', 'Coalition Partner', 'ALEC is an SPN associate member sharing model legislation', true),
+
+  -- ALEC network
+  ('American Legislative Exchange Council', 'organization', 'Koch Industries', 'organization', 'Donation / Financial', 'Koch Industries is a major ALEC funder, giving $504K in 1998 and $2M+ through Koch foundations', true),
+
+  -- Anti-immigration network (Tanton)
+  ('Federation for American Immigration Reform', 'organization', 'Center for Immigration Studies', 'organization', 'Founding', 'CIS was founded in 1985 as a spin-off of FAIR', true),
+  ('Federation for American Immigration Reform', 'organization', 'NumbersUSA', 'organization', 'Coalition Partner', 'Both founded by John Tanton; work in tandem on immigration restriction', true),
+  ('Federation for American Immigration Reform', 'organization', 'Immigration Reform Law Institute', 'organization', 'Subsidiary / Parent', 'IRLI is the legal arm of FAIR', true),
+
+  -- Christian conservative network
+  ('Focus on the Family', 'organization', 'Family Research Council', 'organization', 'Founding', 'FRC was originally founded as a division of Focus on the Family', true),
+  ('Alliance Defending Freedom', 'organization', 'First Liberty Institute', 'organization', 'Coalition Partner', 'Coordinate on religious liberty litigation', true),
+  ('Alliance Defending Freedom', 'organization', 'Liberty Counsel', 'organization', 'Coalition Partner', 'Both litigate religious liberty cases at the appellate and Supreme Court level', true),
+  ('American Center for Law and Justice', 'organization', 'Becket Fund for Religious Liberty', 'organization', 'Coalition Partner', 'Both specialize in religious freedom Supreme Court litigation', true),
+
+  -- Pro-life network
+  ('National Right to Life Committee', 'organization', 'Americans United for Life', 'organization', 'Coalition Partner', 'Coordinate on anti-abortion model legislation', true),
+  ('Susan B. Anthony Pro-Life America', 'organization', 'Students for Life of America', 'organization', 'Coalition Partner', 'Coordinate on pro-life political strategy and campus organizing', true),
+
+  -- Education network
+  ('American Federation for Children', 'organization', 'EdChoice', 'organization', 'Coalition Partner', 'Coordinate on school choice advocacy and research', true),
+
+  -- Media ecosystem
+  ('Salem Media Group', 'organization', 'PragerU', 'organization', 'Coalition Partner', 'Salem distributes PragerU content through radio and digital platforms', true),
+  ('Media Research Center', 'organization', 'Fox News', 'organization', 'Advisory', 'MRC''s research on media bias is regularly cited on Fox News programming', true),
+  ('Capital Research Center', 'organization', 'DonorsTrust', 'organization', 'Coalition Partner', 'CRC researches nonprofit funding; DonorsTrust funds conservative causes', true),
+
+  -- Philanthropy Roundtable and DonorsTrust
+  ('Philanthropy Roundtable', 'organization', 'DonorsTrust', 'organization', 'Founding', 'DonorsTrust was created as a spinoff of the Philanthropy Roundtable', true),
+  ('Philanthropy Roundtable', 'organization', 'Donors Capital Fund', 'organization', 'Founding', 'DCF was also created as a spinoff of the Philanthropy Roundtable', true)
+
+ON CONFLICT DO NOTHING;
