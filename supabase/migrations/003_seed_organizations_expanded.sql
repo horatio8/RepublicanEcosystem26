@@ -247,6 +247,67 @@ INSERT INTO organizations (name, category, description, website, state, city, an
 ('Council for Citizens Against Government Waste', '501(c)(3) Nonprofit', 'Conservative organization opposing government waste and advocating for fiscal responsibility.', 'https://www.cagw.org', 'DC', 'Washington', 4000000, '52-1355828', true),
 -- Note: Judicial Watch already seeded in 002_seed_data.sql
 
+-- ══════════════════════════════════════════════════════════════════
+-- ADDITIONAL MEDIA ORGANIZATIONS
+-- ══════════════════════════════════════════════════════════════════
+
+('The Daily Caller', 'Media Organization', 'Conservative news and opinion website co-founded by Tucker Carlson in 2010.', 'https://dailycaller.com', 'DC', 'Washington', 25000000, NULL, true),
+('RealClearPolitics', 'Media Organization', 'Political news aggregation and polling analysis site with a center-right editorial orientation.', 'https://www.realclearpolitics.com', 'IL', 'Chicago', 15000000, NULL, true),
+('The Dispatch', 'Media Organization', 'Center-right media outlet founded by Jonah Goldberg and Steve Hayes focused on fact-based conservative journalism.', 'https://thedispatch.com', 'DC', 'Washington', 10000000, NULL, true),
+('The Western Journal', 'Media Organization', 'Conservative digital media company publishing news and commentary from a right-of-center perspective.', 'https://www.westernjournal.com', 'AZ', 'Phoenix', 15000000, NULL, true),
+('The Gateway Pundit', 'Media Organization', 'Far-right news and opinion website known for promoting election fraud claims and conspiratorial content.', 'https://www.thegatewaypundit.com', 'MO', 'St. Louis', 5000000, NULL, true),
+('Rumble', 'Media Organization', 'Conservative-friendly video hosting platform positioned as an alternative to YouTube.', 'https://rumble.com', 'FL', 'Longboat Key', 150000000, NULL, true),
+('Trump Media & Technology Group', 'Media Organization', 'Media company founded by Donald Trump that operates the Truth Social platform.', 'https://truthsocial.com', 'FL', 'Sarasota', 5000000, NULL, true),
+('New York Post', 'Media Organization', 'Conservative tabloid newspaper owned by Rupert Murdoch''s News Corp covering news and politics.', 'https://nypost.com', 'NY', 'New York', 200000000, NULL, true),
+('Townhall Media', 'Media Organization', 'Conservative media company operating Townhall.com and other right-leaning news sites as part of Salem Communications.', 'https://townhall.com', 'VA', 'Arlington', NULL, NULL, true),
+('Gab', 'Media Organization', 'Alt-tech social media platform popular with far-right users and free speech advocates.', 'https://gab.com', 'PA', 'Scranton', 5000000, NULL, true),
+('GETTR', 'Media Organization', 'Conservative social media platform founded by former Trump advisor Jason Miller.', 'https://gettr.com', 'NY', 'New York', 5000000, NULL, true),
+
+-- ══════════════════════════════════════════════════════════════════
+-- CONSULTING FIRMS
+-- ══════════════════════════════════════════════════════════════════
+
+('Axiom Strategies', 'Consulting Firm', 'Largest Republican political consulting firm in the country led by Jeff Roe.', 'https://axiomstrategies.com', 'MO', 'Kansas City', 200000000, NULL, true),
+('FP1 Strategies', 'Consulting Firm', 'Republican political consulting firm specializing in media buying and campaign strategy.', 'https://fp1.com', 'VA', 'Arlington', 50000000, NULL, true),
+('Targeted Victory', 'Consulting Firm', 'Leading Republican digital and data-driven political consulting firm.', 'https://targetedvictory.com', 'VA', 'Arlington', 100000000, NULL, true),
+('Majority Strategies', 'Consulting Firm', 'Republican consulting firm specializing in direct mail, digital, and voter contact programs.', 'https://majoritystrategies.com', 'FL', 'Jacksonville', 50000000, NULL, true),
+
+-- ══════════════════════════════════════════════════════════════════
+-- LOBBYING FIRMS
+-- ══════════════════════════════════════════════════════════════════
+
+('BGR Group', 'Lobbying Firm', 'Bipartisan lobbying firm founded by former RNC chairman Haley Barbour with strong Republican ties.', 'https://bgrdc.com', 'DC', 'Washington', 20000000, NULL, true),
+('Ballard Partners', 'Lobbying Firm', 'Trump-connected lobbying firm founded by Brian Ballard that became a top DC firm during the Trump era.', 'https://ballardpartners.com', 'FL', 'Tallahassee', 30000000, NULL, true),
+('Miller Strategies', 'Lobbying Firm', 'Republican lobbying firm providing government affairs and strategic advisory services.', 'https://millerstrategiesllc.com', 'DC', 'Washington', 14000000, NULL, true),
+
+-- ══════════════════════════════════════════════════════════════════
+-- POLLING FIRMS
+-- ══════════════════════════════════════════════════════════════════
+
+('McLaughlin & Associates', 'Polling Firm', 'Republican polling firm that served as a lead pollster for Donald Trump''s presidential campaigns.', 'https://mclaughlinonline.com', 'NY', 'New York', 10000000, NULL, true),
+('Public Opinion Strategies', 'Polling Firm', 'Leading Republican polling and public affairs firm advising candidates and organizations.', 'https://pos.org', 'VA', 'Alexandria', 15000000, NULL, true),
+('The Tarrance Group', 'Polling Firm', 'Republican survey research and strategic consulting firm serving GOP candidates since 1977.', 'https://tarrance.com', 'VA', 'Alexandria', 10000000, NULL, true),
+('Trafalgar Group', 'Polling Firm', 'Republican polling firm known for accurately predicting Trump''s 2016 and 2020 swing state results.', 'https://thetrafalgargroup.org', 'GA', 'Atlanta', 5000000, NULL, true),
+('Rasmussen Reports', 'Polling Firm', 'Conservative-leaning polling and survey research firm publishing daily presidential tracking polls.', 'https://rasmussenreports.com', 'NJ', 'Asbury Park', 5000000, NULL, true),
+('Fabrizio Lee & Associates', 'Polling Firm', 'Republican polling firm led by Tony Fabrizio who served as lead pollster for Trump''s 2016 and 2020 campaigns.', 'https://fabriziolee.com', 'VA', 'Alexandria', 8000000, NULL, true),
+('WPA Intelligence', 'Polling Firm', 'Republican data analytics and polling firm providing research for conservative candidates and causes.', 'https://wpaintel.com', 'DC', 'Washington', 10000000, NULL, true),
+
+-- ══════════════════════════════════════════════════════════════════
+-- DIGITAL / TECH FIRMS
+-- ══════════════════════════════════════════════════════════════════
+
+-- Note: WinRed already seeded in 002_seed_data.sql
+('i360', 'Digital / Tech Firm', 'Koch-network data analytics and voter contact platform serving Republican campaigns and conservative organizations.', 'https://i-360.com', 'VA', 'Arlington', 25000000, NULL, true),
+('Data Trust', 'Digital / Tech Firm', 'RNC-affiliated voter data management company maintaining the Republican national voter file.', 'https://thedatatrust.com', 'DC', 'Washington', 10000000, NULL, true),
+('Deep Root Analytics', 'Digital / Tech Firm', 'Republican data analytics and audience targeting firm serving conservative campaigns and organizations.', 'https://deeprootanalytics.com', 'DC', 'Washington', 10000000, NULL, true),
+
+-- ══════════════════════════════════════════════════════════════════
+-- ADDITIONAL BUSINESS / CORPORATION
+-- ══════════════════════════════════════════════════════════════════
+
+('Regnery Publishing', 'Business / Corporation', 'Leading conservative book publisher that has published works by major right-wing authors since 1947.', 'https://www.regnery.com', 'DC', 'Washington', 15000000, NULL, true),
+('PublicSquare', 'Business / Corporation', 'Conservative online marketplace connecting consumers with patriotic and faith-based businesses.', 'https://publicsq.com', 'FL', 'West Palm Beach', 5000000, NULL, true)
+
 ON CONFLICT DO NOTHING;
 
 -- ══════════════════════════════════════════════════════════════════
