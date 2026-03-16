@@ -240,7 +240,7 @@ INSERT INTO people (name, role, title, description, state, party) VALUES
 ('Wayne Berman', 'Lobbyist', 'Senior Advisor at Blackstone Group', 'Veteran Republican fundraiser and lobbyist who is one of the top GOP bundlers.', 'DC', 'Republican'),
 ('David Urban', 'Lobbyist', 'Founder of American Continental Group', 'Republican lobbyist and strategist who managed Trump''s 2016 Pennsylvania campaign.', 'PA', 'Republican'),
 ('Nick Ayers', 'Lobbyist', 'Republican Operative and Consultant', 'Former chief of staff to VP Pence and top Republican operative turned consultant.', 'GA', 'Republican'),
-('Matt Schlapp', 'Lobbyist', 'Chairman of Cove Strategies', 'Republican lobbyist and chairman of the American Conservative Union who runs Cove Strategies lobbying firm.', 'VA', 'Republican'),
+('Stewart Rhodes', 'Other', 'Founder of Oath Keepers', 'Founder of the Oath Keepers militia group convicted of seditious conspiracy related to January 6.', 'TX', 'Republican'),
 
 -- ══════════════════════════════════════════════════════════════════
 -- 10. GOP PARTY OFFICIALS
@@ -324,7 +324,7 @@ INSERT INTO people (name, role, title, description, state, party) VALUES
 ('Chris Ruddy', 'Executive', 'CEO of Newsmax', 'Founder and CEO of Newsmax who is a longtime personal friend of Donald Trump.', 'FL', 'Republican'),
 ('Salem Abraham', 'Donor', 'Conservative Media Investor', 'Investor in conservative media properties who supports Republican causes.', 'TX', 'Republican'),
 ('Phil Anschutz', 'Donor', 'Chairman of Anschutz Corporation', 'Billionaire businessman who owns The Washington Examiner and funds conservative causes.', 'CO', 'Republican'),
-('Mark Levin', 'Other', 'President of Landmark Legal Foundation', 'Constitutional lawyer who leads Landmark Legal Foundation while hosting his media shows.', 'VA', 'Republican'),
+('Ben Carson', 'Other', 'Former Secretary of HUD', 'Retired neurosurgeon who served as Trump''s HUD Secretary and ran for president in 2016.', 'FL', 'Republican'),
 ('Jim DeMint', 'Other', 'Former U.S. Senator and Heritage President', 'Former senator who became Heritage Foundation president and helped shape the Tea Party movement.', 'SC', 'Republican'),
 ('Ted Olson', 'Lawyer', 'Former U.S. Solicitor General', 'Prominent conservative Supreme Court litigator who served as Solicitor General under George W. Bush.', 'DC', 'Republican'),
 ('Pat Cipollone', 'Lawyer', 'Former White House Counsel', 'Trump''s White House Counsel who testified before the January 6 Committee.', 'DC', 'Republican'),
