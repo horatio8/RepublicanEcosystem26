@@ -1,16 +1,2 @@
 {
-  "crons": [
-    {
-      "path": "/api/jobs/scrape-events",
-      "schedule": "0 */6 * * *"
-    },
-    {
-      "path": "/api/jobs/research-fec",
-      "schedule": "0 3 * * *"
-    },
-    {
-      "path": "/api/jobs/send-invites",
-      "schedule": "0 */2 * * *"
-    }
-  ]
 }
