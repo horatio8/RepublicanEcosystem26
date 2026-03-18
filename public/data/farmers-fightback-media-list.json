@@ -24,8 +24,8 @@
     ]
   },
   "media_list": {
-    "last_updated": "2026-03-17",
-    "total_outlets": 298,
+    "last_updated": "2026-03-18",
+    "total_outlets": 326,
     "categories": [
       "LOCAL \u2014 Wimmera/Mallee/Western Victoria",
       "LOCAL \u2014 Central/Northern Victoria",
@@ -3319,6 +3319,314 @@
         "owner": "ABC",
         "notes": "ABC's lifestyle section regularly features rural and farming life stories.",
         "priority": "LOW"
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Riverina Leader",
+        "type": "Newspaper / Online",
+        "website": "https://www.riverinaleader.com.au",
+        "coverage": "Riverina region, NSW",
+        "owner": "ACM",
+        "notes": "Covers southern NSW farming communities with similar transmission infrastructure concerns.",
+        "priority": "LOW",
+        "id": 299
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Dubbo Daily Liberal",
+        "type": "Newspaper / Online",
+        "website": "https://www.dailyliberal.com.au",
+        "coverage": "Dubbo and central-western NSW",
+        "owner": "ACM",
+        "notes": "Major regional daily in western NSW farming country.",
+        "priority": "LOW",
+        "id": 300
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Daily Examiner (Grafton)",
+        "type": "Newspaper / Online",
+        "website": "https://www.dailyexaminer.com.au",
+        "coverage": "Grafton and Clarence Valley, NSW",
+        "owner": "News Corp (regional)",
+        "notes": "Northern NSW regional daily covering rural communities.",
+        "priority": "LOW",
+        "id": 301
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Manning River Times (Taree)",
+        "type": "Newspaper / Online",
+        "website": "https://www.manningrivertimes.com.au",
+        "coverage": "Taree and Manning Valley, NSW",
+        "owner": "ACM",
+        "notes": "Mid-north coast NSW regional paper. Covers rural infrastructure issues.",
+        "priority": "LOW",
+        "id": 302
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Dalby Herald",
+        "type": "Newspaper / Online",
+        "website": "https://www.dalbyherald.com.au",
+        "coverage": "Dalby, Western Downs, QLD",
+        "owner": "News Corp (regional)",
+        "notes": "Western Downs region affected by energy infrastructure. Solidarity angle.",
+        "priority": "LOW",
+        "id": 303
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Chinchilla News",
+        "type": "Newspaper / Online",
+        "website": "https://www.chinchillanews.com.au",
+        "coverage": "Chinchilla and Western Downs, QLD",
+        "owner": "News Corp (regional)",
+        "notes": "Community affected by CSG/energy infrastructure \u2014 parallels to VNI West farmer opposition.",
+        "priority": "LOW",
+        "id": 304
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Cairns Post",
+        "type": "Newspaper / Online",
+        "website": "https://www.cairnspost.com.au",
+        "coverage": "Far North Queensland",
+        "owner": "News Corp",
+        "notes": "Major regional daily. Covers North QLD farming and infrastructure issues.",
+        "priority": "LOW",
+        "id": 305
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Townsville Bulletin",
+        "type": "Newspaper / Online",
+        "website": "https://www.townsvillebulletin.com.au",
+        "coverage": "North Queensland",
+        "owner": "News Corp",
+        "notes": "North QLD daily. CopperString and other transmission projects give local relevance.",
+        "priority": "LOW",
+        "id": 306
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "Murray Valley Standard (SA)",
+        "type": "Newspaper / Online",
+        "website": "https://www.murrayvalleystandard.com.au",
+        "coverage": "Murray Bridge and Murraylands, SA",
+        "owner": "ACM",
+        "notes": "SA Murraylands farming community. Cross-border solidarity with Victorian farmers.",
+        "priority": "LOW",
+        "id": 307
+      },
+      {
+        "category": "NATIONAL \u2014 Broadcast (TV & Radio)",
+        "outlet": "ABC Country Hour \u2014 Northern Territory",
+        "type": "Radio \u2014 Territory",
+        "website": "https://www.abc.net.au/rural",
+        "coverage": "Northern Territory",
+        "owner": "ABC",
+        "notes": "NT Country Hour. Completes national Country Hour network coverage for Farmers Fightback.",
+        "priority": "LOW",
+        "id": 308
+      },
+      {
+        "category": "LOCAL \u2014 Wimmera/Mallee/Western Victoria",
+        "outlet": "Gold FM Horsham (99.9 Gold FM)",
+        "type": "Radio \u2014 Commercial",
+        "website": "https://www.goldfm.com.au",
+        "coverage": "Horsham and Wimmera region",
+        "owner": "Ace Radio Broadcasters",
+        "notes": "Local commercial radio in Horsham. Reaches farming families across the Wimmera.",
+        "priority": "HIGH",
+        "id": 309
+      },
+      {
+        "category": "REGIONAL \u2014 Greater Victoria",
+        "outlet": "3BO (Bendigo community radio)",
+        "type": "Radio \u2014 Community",
+        "website": "https://www.3bo.com.au",
+        "coverage": "Bendigo and central Victoria",
+        "owner": "Community",
+        "notes": "Bendigo community radio. Reaches farming communities in central Vic goldfields region.",
+        "priority": "LOW",
+        "id": 310
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "2MO (Gunnedah, NSW)",
+        "type": "Radio \u2014 Regional NSW",
+        "website": "https://www.2mo.com.au",
+        "coverage": "Gunnedah, Liverpool Plains, north-west NSW",
+        "owner": "Super Radio Network",
+        "notes": "NSW farming radio. Liverpool Plains farmers fought coal mining \u2014 parallels to VNI West.",
+        "priority": "LOW",
+        "id": 311
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "2VM (Moree, NSW)",
+        "type": "Radio \u2014 Regional NSW",
+        "website": "https://www.2vm.com.au",
+        "coverage": "Moree Plains, northern NSW",
+        "owner": "Super Radio Network",
+        "notes": "Moree farming radio. Northern NSW broadacre cropping community.",
+        "priority": "LOW",
+        "id": 312
+      },
+      {
+        "category": "INTERSTATE \u2014 Regional Newspapers (solidarity/precedent)",
+        "outlet": "6GE (Geraldton, WA)",
+        "type": "Radio \u2014 Regional WA",
+        "website": "https://www.6ge.com.au",
+        "coverage": "Geraldton and mid-west WA",
+        "owner": "Southern Cross Austereo",
+        "notes": "Mid-west WA farming radio. Similar broadacre farming country to Wimmera.",
+        "priority": "LOW",
+        "id": 313
+      },
+      {
+        "category": "NATIONAL \u2014 Podcasts",
+        "outlet": "Rural Focus Podcast (WA)",
+        "type": "Podcast",
+        "website": "https://www.6pr.com.au",
+        "coverage": "Western Australia / national",
+        "owner": "Nine Entertainment / Macquarie Radio",
+        "notes": "WA-focused rural podcast. Covers farming policy, land use, and infrastructure issues.",
+        "priority": "LOW",
+        "id": 314
+      },
+      {
+        "category": "NATIONAL \u2014 Podcasts",
+        "outlet": "Meat Business Women Podcast",
+        "type": "Podcast",
+        "website": "https://www.meatbusinesswomen.org",
+        "coverage": "National / international",
+        "owner": "Meat Business Women",
+        "notes": "Women in the meat and livestock industry. Alternative angle for VNI West impact on livestock operations.",
+        "priority": "LOW",
+        "id": 315
+      },
+      {
+        "category": "NATIONAL \u2014 Mainstream & Wire Services",
+        "outlet": "Junkee Media",
+        "type": "Online",
+        "website": "https://junkee.com",
+        "coverage": "National \u2014 younger demographic",
+        "owner": "oOh!media",
+        "notes": "Reaches younger urban Australians. Good for broadening VNI West story beyond traditional farming audience.",
+        "priority": "LOW",
+        "id": 316
+      },
+      {
+        "category": "NATIONAL \u2014 Mainstream & Wire Services",
+        "outlet": "Schwartz Media (The Saturday Paper / The Monthly publisher)",
+        "type": "Publishing group",
+        "website": "https://www.schwartzmedia.com.au",
+        "coverage": "National",
+        "owner": "Morry Schwartz",
+        "notes": "Publishes The Saturday Paper, The Monthly, 7am podcast. Quality long-form journalism on policy issues.",
+        "priority": "MEDIUM",
+        "id": 317
+      },
+      {
+        "category": "NATIONAL \u2014 Mainstream & Wire Services",
+        "outlet": "The Mandarin",
+        "type": "Online",
+        "website": "https://www.themandarin.com.au",
+        "coverage": "National \u2014 public sector/policy",
+        "owner": "Private Media",
+        "notes": "Covers government policy and public administration. Relevant for VicGrid/AEMO policy angle.",
+        "priority": "LOW",
+        "id": 318
+      },
+      {
+        "category": "INDUSTRY & ADVOCACY",
+        "outlet": "Sugar Research Australia",
+        "type": "Research body / Publications",
+        "website": "https://sugarresearch.com.au",
+        "coverage": "National sugar industry",
+        "owner": "Statutory body",
+        "notes": "Sugar cane farming affected by similar transmission infrastructure in QLD. Solidarity angle.",
+        "priority": "LOW",
+        "id": 319
+      },
+      {
+        "category": "INDUSTRY & ADVOCACY",
+        "outlet": "Rural Industries Research & Development Corporation (RIRDC)",
+        "type": "Research body / Publications",
+        "website": "https://agrifutures.com.au",
+        "coverage": "National",
+        "owner": "Commonwealth statutory body (now AgriFutures)",
+        "notes": "Funds rural research and development. Publishes reports on farming community impacts.",
+        "priority": "LOW",
+        "id": 320
+      },
+      {
+        "category": "NATIONAL \u2014 Energy/Environment Specialist",
+        "outlet": "Environment Victoria",
+        "type": "Advocacy / Media",
+        "website": "https://environmentvictoria.org.au",
+        "coverage": "Victoria",
+        "owner": "Independent not-for-profit",
+        "notes": "Peak environment body in Vic. Has positions on renewable energy and community consent. Potential for nuanced coverage.",
+        "priority": "MEDIUM",
+        "id": 321
+      },
+      {
+        "category": "NATIONAL \u2014 Energy/Environment Specialist",
+        "outlet": "Renewable Energy Victoria (REV)",
+        "type": "Government body / Publications",
+        "website": "https://www.energy.vic.gov.au",
+        "coverage": "Victoria",
+        "owner": "Victorian Government",
+        "notes": "State government renewable energy office. Monitor for official announcements and counter-narratives.",
+        "priority": "MEDIUM",
+        "id": 322
+      },
+      {
+        "category": "INDUSTRY & ADVOCACY",
+        "outlet": "Country Fire Authority (CFA) \u2014 Community Networks",
+        "type": "Emergency services / Community network",
+        "website": "https://www.cfa.vic.gov.au",
+        "coverage": "Regional Victoria",
+        "owner": "Victorian Government",
+        "notes": "CFA brigades are a backbone of rural communities. Volunteer networks overlap with affected farming families. Bushfire risk angle for transmission infrastructure.",
+        "priority": "MEDIUM",
+        "id": 323
+      },
+      {
+        "category": "POLITICAL & DIGITAL CHANNELS",
+        "outlet": "The Nationals (Victorian Division) \u2014 party media",
+        "type": "Political party media",
+        "website": "https://vic.nationals.org.au",
+        "coverage": "Regional Victoria",
+        "owner": "National Party of Australia (Vic)",
+        "notes": "Party media channels for amplification. Nationals have been vocal on VNI West opposition.",
+        "priority": "MEDIUM",
+        "id": 324
+      },
+      {
+        "category": "POLITICAL & DIGITAL CHANNELS",
+        "outlet": "Liberal Party of Victoria \u2014 media office",
+        "type": "Political party media",
+        "website": "https://vic.liberal.org.au",
+        "coverage": "Victoria",
+        "owner": "Liberal Party of Australia (Vic Division)",
+        "notes": "Opposition party media. Jess Wilson as leader has raised energy infrastructure concerns.",
+        "priority": "MEDIUM",
+        "id": 325
+      },
+      {
+        "category": "POLITICAL & DIGITAL CHANNELS",
+        "outlet": "Jacinta Allan (Premier) \u2014 media office",
+        "type": "Government media",
+        "website": "https://www.premier.vic.gov.au",
+        "coverage": "Victoria",
+        "owner": "Victorian Government",
+        "notes": "Premier's media office. Key target for direct advocacy and media pressure on VNI West decisions.",
+        "priority": "HIGH",
+        "id": 326
       }
     ],
     "key_journalists": [
@@ -3593,6 +3901,46 @@
         "location": "Victoria",
         "notes": "Victorian farmer and mental health advocate. Strong social media following.",
         "priority": "MEDIUM"
+      },
+      {
+        "name": "Tom Rabe",
+        "outlet": "Sydney Morning Herald / The Age",
+        "beat": "Political / energy journalism",
+        "location": "Sydney",
+        "notes": "Covers energy policy, transmission infrastructure, and political angles of renewables transition.",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "Emma Kealy",
+        "outlet": "Nationals MP (Lowan electorate)",
+        "beat": "Local member \u2014 covers Wallaloo district",
+        "location": "Western Victoria",
+        "notes": "Nationals state MP for Lowan. Electorate includes Wallaloo and directly affected farming communities. Key political voice against VNI West.",
+        "priority": "CRITICAL"
+      },
+      {
+        "name": "Sophie Mirabella",
+        "outlet": "Sky News / various",
+        "beat": "Political commentary \u2014 rural Victoria",
+        "location": "North-east Victoria",
+        "notes": "Former Liberal MP for Indi. Political commentator with deep connections to rural Victorian communities.",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "Fran Kelly",
+        "outlet": "ABC / various",
+        "beat": "Political journalism / national affairs",
+        "location": "Canberra / national",
+        "notes": "Veteran ABC political journalist. Former RN Breakfast host. Covers national policy including energy and regional issues.",
+        "priority": "MEDIUM"
+      },
+      {
+        "name": "Greg Jericho",
+        "outlet": "The Guardian Australia",
+        "beat": "Economics / policy analysis",
+        "location": "Canberra",
+        "notes": "Economics and policy journalist. Analyses cost-benefit of infrastructure projects, energy economics, and impact on regional communities.",
+        "priority": "MEDIUM"
       }
     ],
     "priority_summary": {
@@ -3613,7 +3961,8 @@
         "Birchip Cropping Group \u2014 farmer-driven R&D group in VNI West corridor",
         "Buloke Times \u2014 directly affected shire newspaper",
         "Emma Kealy MP (Nationals, Lowan) \u2014 electorate covers Wallaloo",
-        "Farmers Fightback social media \u2014 campaign's own channels"
+        "Farmers Fightback social media \u2014 campaign's own channels",
+        "Emma Kealy MP (Lowan) \u2014 local Nationals MP covering Wallaloo district"
       ],
       "HIGH": [
         "The Weekly Advertiser \u2014 free weekly across Wimmera farms",
@@ -3667,7 +4016,9 @@
         "Australian Farmers: Telling Our Story podcast \u2014 NFF platform",
         "MSF Farm Talk Podcast \u2014 Mallee specific",
         "The Australian Ag Podcast \u2014 Weekly Times",
-        "The Weekly Grill podcast \u2014 Kerry Lonergan, farmer audience"
+        "The Weekly Grill podcast \u2014 Kerry Lonergan, farmer audience",
+        "Gold FM Horsham \u2014 local commercial radio in the Wimmera",
+        "Jacinta Allan Premier's media office \u2014 key government target"
       ]
     }
   }
