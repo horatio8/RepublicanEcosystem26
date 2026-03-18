@@ -7,3 +7,10 @@ const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publi
 export function createBrowserClient() {
   return createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 }
+
+// Server-side Supabase client (uses service role key — full read/write)
+export function createServiceClient() {
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  if (!serviceKey) throw new Error('SUPABASE_SERVICE_ROLE_KEY is not set')
+  return createClient(SUPABASE_URL, serviceKey)
+}
